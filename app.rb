@@ -17,7 +17,7 @@ post '/sms' do
 
   if sms_body == 'summit'
     twiml = Twilio::TwiML::Response.new do |r|
-      r.Message "Hello, you sent #{sms_body}."
+      r.Message "This is filler text, change text here app.rb."
     end
   else
     twiml = Twilio::TwiML::Response.new
