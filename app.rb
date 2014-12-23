@@ -17,10 +17,12 @@ post '/sms' do
 
   if sms_body == 'summit'
     twiml = Twilio::TwiML::Response.new do |r|
-      r.Message "😎 Paramount WiFi: Upfront Summit \
-      Password: Guests \
-      \
-      For attendees and more info visit summit.upfront.com"
+      r.Message "😎 Welcome to Upfront Summit 😎
+      
+      Paramount WiFi: Upfront Summit
+      Password: Guests 
+      
+      For attendee list and more info visit summit.upfront.com"
     end
   else
     twiml = Twilio::TwiML::Response.new
