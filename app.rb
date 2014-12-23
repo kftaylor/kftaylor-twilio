@@ -20,7 +20,7 @@ post '/sms' do
       r.Message "😎 Welcome to Upfront Summit 😎
       
       Paramount WiFi: Upfront Summit
-      Password: Guests 
+      Password: Guest
       
       For attendee list and more info visit summit.upfront.com"
     end
