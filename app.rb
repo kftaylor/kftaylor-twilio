@@ -15,14 +15,13 @@ post '/sms' do
   sms_body = params[:Body]
   sms_body = sms_body.gsub("/[^A-Za-z0-9]/u", ' ').strip.downcase
 
-  if sms_body == 'summit'
+  if sms_body == 'defy'
     twiml = Twilio::TwiML::Response.new do |r|
       r.Message "😎 Welcome 😎
     
-    Network: Upfront Summit
-    Password: Guest
+ To register interest in Defy Ventures please complete this form:
     
-    For attendee list and more info visit summit.upfront.com"
+ http://bit.ly/2iSsHjX"
     end
   else
     twiml = Twilio::TwiML::Response.new
