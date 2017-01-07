@@ -17,11 +17,11 @@ post '/sms' do
 
   if sms_body == 'defy'
     twiml = Twilio::TwiML::Response.new do |r|
-      r.Message "😎 Welcome 😎
+      r.Message "😎 Welcome to Upfront Summit 😎
     
- To register interest in Defy Ventures please complete this form:
+To register interest in Defy Ventures please complete this form
     
- http://bit.ly/2iSsHjX"
+http://bit.ly/2iSsHjX"
     end
   else
     twiml = Twilio::TwiML::Response.new
